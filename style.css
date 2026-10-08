@@ -29,10 +29,25 @@ h4 {
   font-weight: 300;
 }
 
-img {
+
+/* I added this to make sure picture fits
+inside the grid without overflowing. */
+picture {
   display: block;
+  min-width: 0;
 }
 
+/* I used the same idea we practiced in class
+to make the image fit its container while
+keeping its original proportions. */
+picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* At 960px I used two columns instead of one,
+so the title and image appear next to each other. */
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
