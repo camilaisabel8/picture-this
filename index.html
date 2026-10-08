@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +16,17 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+
+    <!-- I used srcset to give the browser different
+    image resolutions to choose from, depending on
+    the pixel density of the screen. -->
+
+    <img
+      src="images/museum-ls-320x.jpg"
+      alt="Interior of a museum"
+      srcset="images/museum-ls-320x.jpg 1x,
+              images/museum-ls-640x.jpg 2x,
+              images/museum-ls-960x.jpg 3x">
 
   </header>
 </body>
